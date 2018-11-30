@@ -1,6 +1,7 @@
 # LAN-Chat-Python-Electron-
 My first app developed with Python an Electron. Hope You like it !
 Added css dependencies locally in order to avoid gui errors in offline mode and boost launch speed.
+For fancy animation, thanks to Eugen Megherea -> https://github.com/eugeniumegherea
 
 ### Prerequisites
 
