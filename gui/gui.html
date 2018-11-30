@@ -1,0 +1,59 @@
+<head>
+	<link rel="stylesheet" href="bootstrap.min.css" integrity=crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" integrity=crossorigin="anonymous">
+	<link rel="stylesheet" href="fonts/fa/css/all.css">
+	<script src="pts.js"></script>
+	<script>
+		window.$ = require("./jquery.js")
+		require("./renderer.js")
+	</script>
+</head>
+
+<div class="container-fluid" id="chat">
+	<div class="row">
+		<div class="col-xs-3">
+			<h3 style="text-align: center; color:white">
+				Online users 
+			</h3>
+			<br>
+			<div id="users">
+				<br>
+			</div>
+		</div>
+		<div class="col-xs-9" id="right-div">
+			<div id="animation">
+				<canvas id="canvas" width="634" height="634" style="width: 634px; height: 100%;"></canvas>
+			</div>
+			<div id="chat-windows">
+				<div class="row">
+					<div class="col-xs-12" id="message-list">
+						
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-10">
+						<input type="text" id="msg-input" class="form-control">
+					</div>
+					<div class="col-xs-2">
+						<button class="btn btn-light pull-right btn-lg" id="send"> Send </button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid" id="username-page">
+	<h2 class="title">LAN CHAT v0.1</h2>
+		<div class="col-sm-6 col-sm-offset-3" >
+			<div id="enter-username">
+				<i class="fas fa-user fa-2x"></i>
+				<br><br>
+				<input type="text" class="form-control" id="username" placeholder="Enter username" autofocus>
+				<br>
+				<button class="btn btn-default btn-lg" id="confirm-user"> Enter </button>
+			</div>
+	</form>
+</div>

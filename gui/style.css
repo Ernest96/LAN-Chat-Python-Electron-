@@ -1,0 +1,155 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+* {
+      font-family: 'Montserrat';
+  }
+
+#right-div{
+  border-left: 3px solid #36384f;
+  height:100%;
+  padding: 20px 20px;
+  background-color: #2D2E39;
+}
+
+.user-badge{
+    border-radius: 15px;
+    background: #73AD21;
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 92%;
+    height: 64px;
+    background-color:#1fc8db;
+    background-image: linear-gradient(-230deg, #2CD8D5 0%, #6B8DD6 65%, #cf96ff 100%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-bottom: 20px;
+    font-size:20px;
+    margin-left:6px;
+    overflow-x: auto;
+}
+
+.user-badge.selected{
+    border:2px solid white;
+    color:white;
+}
+
+.user-badge:hover{
+  transform: scale(1.08);
+  border:2px solid white;
+}
+
+.message-from{
+  margin-top:4px;
+  border-radius: 15px;
+  float:right !important;
+  padding: 15px 15px; 
+  max-width:300px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  font-weight: 800;
+  font-size:19px;
+  overflow: auto;
+}
+
+.message-to{
+  margin-top:4px;
+  border-radius: 15px;
+  float:left !important;
+  padding: 15px 15px; 
+  max-width:300px;
+  height:auto !important;
+  font-weight: 800;
+  font-size:19px;
+  background-image: linear-gradient(to left, #a1c4fd 0%, #c2e9fb 100%);
+  overflow: auto;
+}
+
+
+.time{
+  font-weight: 400;
+  font-size:12px;
+  margin-top:2px;
+  font-style: italic;
+}
+
+#chat{
+  display: none;
+  background-color: #2D2E39;
+}
+
+#chat-windows{
+  display: none;
+}
+
+#enter-username{
+  display: none;
+  padding:16px;
+  text-align:center;
+  margin-top:90px;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 8px;
+  border:1px solid #ededed;
+}
+
+#username{
+  height:55px;
+  font-size:17px;
+}
+
+#users{
+  overflow-y: auto;
+  height:85%;
+  margin-top:-20px;
+}
+
+.gray-bold{
+  color:white;
+  font-weight: bolder;
+  font-size:1.3em;
+  color:#808080;
+}
+
+.title{
+  display: none;
+  margin-top: 80px;
+  text-align: center;
+  color:white;
+}
+
+
+#username-page{
+  height: 100%;
+  background-image: linear-gradient(to top, #2b5876 0%, #4e4376 100%);
+}
+
+#message-list{
+  height:89%;
+  margin-bottom: 20px;
+  overflow-y:auto;
+}
+
+#msg-input{
+  height: 47px;
+  font-size:17px;
+  color:black;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
