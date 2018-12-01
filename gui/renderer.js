@@ -9,11 +9,20 @@ $(document).ready(function() {
 	var PORT = 3000;
 	var HOST = '224.0.0.224';
 	var dgram = require('dgram');
+	var py = null;
+
+	$(window).on('beforeunload', function(){
+		if (py != null){
+			py.kill();
+		}
+     	});
 
 	$(".title").fadeIn(800, function() {
     	$("#enter-username").fadeIn(600, function() {
   		});
   	});
+
+	
 
 	$("#confirm-user").click(function (){
 		username = $("#username").val();
@@ -32,7 +41,7 @@ $(document).ready(function() {
 	})
 
     function start_server(){
-    	var spawn = require('child_process').spawn,
+    	var spawn = require('child_process').spawn;
 		py = spawn('python', ['../chat/chat.py'])
 		py.stdout.on('data', function(data){
 			val = decoder.decode(data).replace(/\n/g, "");
